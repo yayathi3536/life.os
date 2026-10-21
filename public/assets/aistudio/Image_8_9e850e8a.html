@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#00a572", "surface-tint": "#cebdff", "on-tertiary-container": "#3b3500", "on-tertiary-fixed": "#201c00", "on-primary": "#381385", "surface-container-low": "#1b1b1f", "inverse-on-surface": "#2f3034", "secondary-fixed": "#6ffbbe", "surface-container-lowest": "#0d0e11", "on-error": "#690005", "primary-fixed": "#e8ddff", "primary-fixed-dim": "#cebdff", "surface-bright": "#38393c", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed-variant": "#504700", "surface-container-high": "#292a2d", "error": "#ffb4ab", "outline-variant": "#494552", "surface-container": "#1f1f23", "on-surface": "#e3e2e6", "tertiary-fixed": "#f8e454", "secondary": "#4edea3", "tertiary": "#dbc839", "on-secondary-fixed": "#002113", "surface-dim": "#121316", "on-surface-variant": "#cac4d4", "on-background": "#e3e2e6", "tertiary-fixed-dim": "#dbc839", "primary": "#cebdff", "outline": "#948e9d", "on-error-container": "#ffdad6", "primary-container": "#a78bfa", "inverse-primary": "#674bb5", "on-secondary-container": "#00311f", "tertiary-container": "#af9e00", "on-primary-fixed-variant": "#4f319c", "surface": "#121316", "on-primary-fixed": "#21005e", "inverse-surface": "#e3e2e6", "error-container": "#93000a", "on-tertiary": "#373100", "on-primary-container": "#3c1989", "surface-variant": "#343538", "background": "#121316", "on-secondary-fixed-variant": "#005236", "surface-container-highest": "#343538", "on-secondary": "#003824" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "2rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "stat-counter": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "700" }], "title-sm": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "stat-counter": ["28px", { lineHeight: "32px", letterSpacing: "-0.03em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121316;color:#e3e2e6;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.25rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="LIFE OS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOM7im36yNuceJqtMX6dGWWrcuw1zpyS2wutn08mBRMlXojYi_Ylf-UEtC_Olt2i_xKNHJmPupf8z1cyzmiUxBuAEDjqiz9hIEOtOIdJ4tmRD12WVnVy2qEq2j8DLiYiJLCucnOz070GW73m-Jgc5dsT2OqxbiKVYxaibpjLG0SVVH4m9NdEl1GP4ZlHfwgnarvayd2bMBIOmJWfqVbekbS858k1zHZhCyiQWmwplmlCBo530rB85_GGTF"/><div class="flex flex-col"><span class="font-title-sm text-title-sm text-on-surface tracking-tight leading-none">LIFE OS</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Leaderboard</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xs:flex flex-col text-right pr-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Wed, Oct 24</span></div><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md"><span class="material-symbols-outlined text-secondary text-[16px]">local_fire_department</span><span class="font-label-sm text-label-sm font-semibold text-secondary">14d</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-20 space-y-space-md">
+<!-- Header & Context -->
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Leaderboard</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Squad rankings based on verified habits and quest completion.</p>
+</div>
+<div class="h-8 w-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</div>
+</div>
+<!-- Timeframe Switcher Tabs (Segmented Control) -->
+<div class="mt-space-md grid grid-cols-3 p-1 rounded-xl bg-surface-container-lowest gap-1">
+<button class="flex items-center justify-center py-1.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm transition-all duration-200">
+        Weekly
+      </button>
+<button class="flex items-center justify-center py-1.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all duration-200">
+        Monthly
+      </button>
+<button class="flex items-center justify-center py-1.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all duration-200">
+        All Time
+      </button>
+</div>
+</div>
+<!-- Minimalist Architectural Podium -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p-space-md overflow-hidden shadow-lg">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex items-end justify-between pt-4 pb-2 px-1">
+<!-- #2 Left: You -->
+<div class="flex flex-col items-center flex-1 z-10">
+<div class="relative mb-2">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest p-0.5 ring-2 ring-primary/40 shadow-[0_0_12px_rgba(206,189,255,0.15)] flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="Close up architectural portrait of a focused creative professional, modern moody ambient lighting, soft purple undertones, minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBExbpZrjUrLpvRwcbGqGnmAISWvGLC8PJctdqI0wxGA7FZQPzvoOSyogKivFxHdRYrgJnG-WepKU4i8WvVRqhV16egbR5FCn6I7MqRq3qg3Eei75BJzTQlL7AhOqDm2SMEx-Gi3YW6lQn6-V-OvHlOuCZoAbCddC3kCOjiwGK3YsxP2McTbN7x1fmmn70SCjro6YTPuXmaAeCHF_OvBNJCI2PpyVpqOe8SLyEwXLgtHvAlvz81kZOaiA"/>
+</div>
+<span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[10px] leading-tight font-bold shadow-md">
+            2nd
+          </span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold text-center mt-1 flex items-center gap-1">
+          You
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lvl 14</span>
+<div class="mt-2 text-center">
+<span class="font-title-sm text-title-sm font-bold text-primary-fixed">2,890</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant block uppercase tracking-wider">XP</span>
+</div>
+<!-- Pillar Height 2 -->
+<div class="w-full h-16 mt-3 rounded-t-lg bg-surface-container-high/70 flex flex-col items-center justify-end pb-1.5">
+<span class="font-label-sm text-[10px] text-on-surface-variant tracking-wider">84% PACE</span>
+</div>
+</div>
+<!-- #1 Center: Alex Morgan -->
+<div class="flex flex-col items-center flex-1 mx-2 z-20">
+<div class="relative mb-2">
+<!-- Ambient Halo -->
+<div class="absolute -inset-1 rounded-full bg-primary/30 blur-sm"></div>
+<div class="relative w-16 h-16 rounded-full bg-primary-container p-0.5 shadow-[0_0_20px_rgba(167,139,250,0.35)] flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="Editorial portrait of high performance athlete looking sharp, monochromatic tones with deep charcoal and ethereal lavender rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7-r7nMaOfyazWJTfNqdDHU7NUU3lZoJt0GAkZo4HrU5SRHujra-ilCAkQJLSDSf-ZPG8LMd7ZnIkko1mn3_KniNGMMKIj9HGkxDFX46TlAs_sFXbXFhXpD6A_Q-ypbCrNnEw8b6miPFrVljrnkaoXdG8zxGLz9btTL5OsSfU423T7ubgfBySrTOCNcv7YBdYKiSnTdZPKwHU0XjVbxIRXPh-JPHw5eW-jsV2e-9XRrkB8xV362p93JA"/>
+</div>
+<div class="absolute -top-2 left-1/2 -translate-x-1/2 flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] font-bold shadow-sm">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span>1st</span>
+</div>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold text-center mt-1">Alex M.</span>
+<span class="font-label-sm text-label-sm text-primary">Lvl 18</span>
+<div class="mt-2 text-center">
+<span class="font-stat-counter text-stat-counter text-primary font-bold">3,420</span>
+<span class="font-label-sm text-[10px] text-primary block uppercase tracking-wider">XP</span>
+</div>
+<!-- Pillar Height 1 -->
+<div class="w-full h-24 mt-3 rounded-t-lg bg-primary-container/20 flex flex-col items-center justify-between py-2 relative overflow-hidden">
+<div class="w-full h-1 bg-primary/60 absolute top-0 inset-x-0"></div>
+<span class="material-symbols-outlined text-primary text-[16px]">workspace_premium</span>
+<span class="font-label-sm text-[10px] font-bold text-primary tracking-wider">BENCHMARK</span>
+</div>
+</div>
+<!-- #3 Right: Sarah Chen -->
+<div class="flex flex-col items-center flex-1 z-10">
+<div class="relative mb-2">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest p-0.5 shadow-sm flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="Portrait of an innovator woman in minimal dark techwear, sleek studio lighting with sharp depth of field, calm stoic confidence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQNkXDpN6o3kbK7OPWlxb4Hw8SsAwWBhfRCelz6C96O04THscWxLIK5ki7zwUUHTY9mnjnyUXMgJNrrJhVCbuMk-qKAhHyjvnFHaFVlU5g-OtxaibWRIWA_wnJizSU_cyPbU8nYq3ocISmwrqjVGmeAod54C3ErvnP4zWDBAo7QlH9gMib_gbAzQVBswbu5iE4gd1Zb8RpSso3uALgdiNDwIiiLSxcuFjRyh7fdssIsUGJ0lRDqdG_CQ"/>
+</div>
+<span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] leading-tight font-bold shadow-md">
+            3rd
+          </span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold text-center mt-1">Sarah C.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lvl 16</span>
+<div class="mt-2 text-center">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">2,640</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant block uppercase tracking-wider">XP</span>
+</div>
+<!-- Pillar Height 3 -->
+<div class="w-full h-12 mt-3 rounded-t-lg bg-surface-container-high/40 flex flex-col items-center justify-end pb-1.5">
+<span class="font-label-sm text-[10px] text-on-surface-variant tracking-wider">77% PACE</span>
+</div>
+</div>
+</div>
+<!-- XP Pace Comparison Bar -->
+<div class="mt-space-sm pt-space-sm bg-surface-container/60 rounded-xl p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Weekly XP Target Gap (vs #1)</span>
+<span class="text-secondary font-semibold">-530 XP pace</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full" style="width: 84.5%;"></div>
+<div class="h-full bg-primary/20 rounded-r-full" style="width: 15.5%;"></div>
+</div>
+</div>
+</div>
+<!-- Squad Ranked List -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Active Cohort (8 Members)</h2>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">refresh</span> Synced 4m ago
+      </span>
+</div>
+<!-- Pos 1: Alex Morgan -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container transition-all hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 text-center font-stat-counter text-title-sm font-bold text-primary">1</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Monochromatic portrait avatar of high performance leader, subtle ambient shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACzPjHbMGc5ABaToGGNl3cC7Yiyesh65fg2W-dnqk2lCZ4G9CuQHoVGNGod_9IDzVkvrNltUFU5rx2mQ3yd5IZyBM_sVziWiRiWHhAcU3wwI3MOR0v20XcDeM7HoGBoZylwNmwJhBdovipJlhve-YlTOZz6kgYIDV34c6nGsb3KykadchQexs-PeEAWE5GK0RGiNqlufnQ-WBhRxMKQ5C2z-FXjEgIO-sF5TyCnV3NujjpC0_zm1DUlg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Alex Morgan</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/10 text-primary font-label-sm text-[10px]">Leader</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">24 quests completed</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">3,420 <span class="text-[10px] font-normal text-on-surface-variant">XP</span></span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">28d</span>
+</div>
+</div>
+</div>
+<!-- Pos 2: YOU (Highlighted Row) -->
+<div class="relative flex items-center justify-between p-space-md rounded-xl bg-surface-container-high shadow-[0_0_24px_rgba(167,139,250,0.12)]">
+<div class="absolute left-0 inset-y-0 w-1 rounded-l-xl bg-primary"></div>
+<div class="flex items-center gap-space-sm min-w-0 pl-1">
+<span class="w-5 text-center font-stat-counter text-title-sm font-bold text-primary-fixed">2</span>
+<div class="relative w-10 h-10 rounded-full bg-surface-container shrink-0 overflow-hidden ring-1 ring-primary/40">
+<img class="w-full h-full object-cover" data-alt="Creative technologist avatar, sharp facial angles, cinematic dark ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaDUxmIgACb-NXNh5toIf394EOSEXTRexpt2NDxKmimkWZIiN9ferDsKhPFNQAOMyOntY3QZxgk7EOKDQyRdVmC8bPhROLPUh_wrpIVtJprTnXvEaG1PC-Z9Xh_bbZxvoKiJqj-NQ_S05tAgDvBZ-0ErVF0Rlo_UeVtSaEmrvOry1pxWwgetaKOyh33KrVgByIQR2dfwntwsEromePjlrMs983eBKxm0VFKwpw_hZ7quSiUao8JXla1Q"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">You (Architect)</span>
+<span class="px-1.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] font-bold tracking-wider">YOU</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">19 quests completed</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-title-sm text-title-sm font-bold text-primary-fixed">2,890 <span class="text-[10px] font-normal text-on-surface-variant">XP</span></span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">14d</span>
+</div>
+</div>
+</div>
+<!-- Pos 3: Sarah Chen -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container transition-all hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 text-center font-stat-counter text-title-sm font-bold text-on-surface-variant">3</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait profile of focused female researcher, moody studio ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBdrfliss1koOHcTLwiKT7kHnl8W9Ogr-DeKKsjGoD0M7wpOn3Sctl7qgxdYh-BIH5faCcBu726YkykRUSpXHExJyIRGUQH9VQppKD8lACyFVcVqn_uriWb3Vz3pkkUrnUbNHdyKFGBVoEvB3C7yAgaNfwp42Go4mx3_DaOrFEKpU_Hvu0ENR_qChxusg99Sbx4SO1e6-YqP1B9UwN8qQTPpW_5siPWt2ajbC-_pPjg8GWfEMYd9v1pA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Sarah Chen</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">18 quests completed</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">2,640 <span class="text-[10px] font-normal text-on-surface-variant">XP</span></span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">9d</span>
+</div>
+</div>
+</div>
+<!-- Pos 4: Elena Rostova -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container transition-all hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 text-center font-stat-counter text-title-sm font-bold text-on-surface-variant">4</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center text-on-surface-variant font-label-md">
+          ER
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15 quests completed</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">2,150 <span class="text-[10px] font-normal text-on-surface-variant">XP</span></span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">21d</span>
+</div>
+</div>
+</div>
+<!-- Pos 5: Marcus Vance -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container transition-all hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 text-center font-stat-counter text-title-sm font-bold text-on-surface-variant">5</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center text-on-surface-variant font-label-md">
+          MV
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 quests completed</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">1,820 <span class="text-[10px] font-normal text-on-surface-variant">XP</span></span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">4d</span>
+</div>
+</div>
+</div>
+<!-- Pos 6: David Kim -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container transition-all hover:bg-surface-container-high">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-5 text-center font-stat-counter text-title-sm font-bold text-on-surface-variant">6</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center text-on-surface-variant font-label-md">
+          DK
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">David Kim</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">10 quests completed</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">1,410 <span class="text-[10px] font-normal text-on-surface-variant">XP</span></span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">2d</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Sticky Action / Summary Bar -->
+<div class="sticky bottom-20 z-40 w-full mt-2">
+<div class="rounded-2xl bg-surface-container-highest/95 backdrop-blur-xl p-space-sm pl-4 pr-space-sm shadow-[0_12px_32px_rgba(0,0,0,0.5)] flex items-center justify-between gap-3">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Rank #2 of 8</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-bold">Top 15%</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">
+          530 XP behind Alex
+        </p>
+</div>
+<button class="h-10 px-4 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 shrink-0 shadow-md hover:opacity-90 active:scale-95 transition-all" id="log-quest-btn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Log Quest</span>
+</button>
+</div>
+</div>
+<!-- Interactive Micro-Feedback Toast (Client Script) -->
+<div class="fixed top-20 inset-x-4 z-50 transform -translate-y-16 opacity-0 transition-all duration-300 pointer-events-none flex justify-center" id="toast-confirm">
+<div class="px-4 py-2.5 rounded-full bg-surface-bright text-on-surface shadow-2xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md">Opening quest logger...</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const btn = document.getElementById('log-quest-btn');
+    const toast = document.getElementById('toast-confirm');
+    if (!btn || !toast) return;
+
+    btn.addEventListener('click', () => {
+      toast.classList.remove('-translate-y-16', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('-translate-y-16', 'opacity-0');
+      }, 2000);
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-fixed bg-primary-container/20 shadow-[0_0_16px_rgba(167,139,250,0.18)]"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Overview</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="quests" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Quests</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="challenges" href="#"><span class="material-symbols-outlined text-[20px]">swords</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Challenges</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl transition-all duration-200 text-primary-fixed bg-primary-container/20 shadow-[0_0_16px_rgba(167,139,250,0.18)]" data-path="leaderboard" href="#"><span class="material-symbols-outlined text-[20px]">leaderboard</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Ranking</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Profile</span></a></div></nav></body></html>

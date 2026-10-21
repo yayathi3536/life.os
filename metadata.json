@@ -1,0 +1,6 @@
+{
+  "name": "LIFE OS",
+  "description": "A minimalist life-gamification platform for personal progression, daily quests, XP levels, squad challenges, and friend leaderboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

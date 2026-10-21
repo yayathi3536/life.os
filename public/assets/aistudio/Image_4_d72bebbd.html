@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#00a572", "surface-tint": "#cebdff", "on-tertiary-container": "#3b3500", "on-tertiary-fixed": "#201c00", "on-primary": "#381385", "surface-container-low": "#1b1b1f", "inverse-on-surface": "#2f3034", "secondary-fixed": "#6ffbbe", "surface-container-lowest": "#0d0e11", "on-error": "#690005", "primary-fixed": "#e8ddff", "primary-fixed-dim": "#cebdff", "surface-bright": "#38393c", "secondary-fixed-dim": "#4edea3", "on-tertiary-fixed-variant": "#504700", "surface-container-high": "#292a2d", "error": "#ffb4ab", "outline-variant": "#494552", "surface-container": "#1f1f23", "on-surface": "#e3e2e6", "tertiary-fixed": "#f8e454", "secondary": "#4edea3", "tertiary": "#dbc839", "on-secondary-fixed": "#002113", "surface-dim": "#121316", "on-surface-variant": "#cac4d4", "on-background": "#e3e2e6", "tertiary-fixed-dim": "#dbc839", "primary": "#cebdff", "outline": "#948e9d", "on-error-container": "#ffdad6", "primary-container": "#a78bfa", "inverse-primary": "#674bb5", "on-secondary-container": "#00311f", "tertiary-container": "#af9e00", "on-primary-fixed-variant": "#4f319c", "surface": "#121316", "on-primary-fixed": "#21005e", "inverse-surface": "#e3e2e6", "error-container": "#93000a", "on-tertiary": "#373100", "on-primary-container": "#3c1989", "surface-variant": "#343538", "background": "#121316", "on-secondary-fixed-variant": "#005236", "surface-container-highest": "#343538", "on-secondary": "#003824" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "2rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "stat-counter": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "700" }], "title-sm": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "stat-counter": ["28px", { lineHeight: "32px", letterSpacing: "-0.03em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121316;color:#e3e2e6;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.25rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="LIFE OS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOM7im36yNuceJqtMX6dGWWrcuw1zpyS2wutn08mBRMlXojYi_Ylf-UEtC_Olt2i_xKNHJmPupf8z1cyzmiUxBuAEDjqiz9hIEOtOIdJ4tmRD12WVnVy2qEq2j8DLiYiJLCucnOz070GW73m-Jgc5dsT2OqxbiKVYxaibpjLG0SVVH4m9NdEl1GP4ZlHfwgnarvayd2bMBIOmJWfqVbekbS858k1zHZhCyiQWmwplmlCBo530rB85_GGTF"/><div class="flex flex-col"><span class="font-title-sm text-title-sm text-on-surface tracking-tight leading-none">LIFE OS</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Quests</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xs:flex flex-col text-right pr-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Wed, Oct 24</span></div><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md"><span class="material-symbols-outlined text-secondary text-[16px]">local_fire_department</span><span class="font-label-sm text-label-sm font-semibold text-secondary">14d</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-12">
+<!-- Header / Action Bar -->
+<div class="flex items-start justify-between gap-space-sm pt-2 mb-space-md">
+<div class="flex flex-col min-w-0">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Your quests</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Focus on what matters most today.</p>
+</div>
+<button class="shrink-0 flex items-center gap-1.5 h-10 px-4 rounded-xl bg-primary-container text-on-primary-container font-title-sm text-title-sm font-semibold shadow-md active:scale-95 transition-all duration-150" id="open-create-btn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Create Quest</span>
+</button>
+</div>
+<!-- Status Tabs -->
+<div class="flex items-center gap-1.5 p-1 bg-surface-container-low rounded-xl mb-space-sm overflow-x-auto no-scrollbar">
+<button class="status-tab flex-1 min-w-[70px] py-1.5 px-3 rounded-lg font-label-md text-label-md text-center transition-colors bg-primary-container text-on-primary-container shadow-sm font-semibold" data-status="all">
+      All (9)
+    </button>
+<button class="status-tab flex-1 min-w-[70px] py-1.5 px-3 rounded-lg font-label-md text-label-md text-center transition-colors text-on-surface-variant hover:text-on-surface" data-status="today">
+      Today (4)
+    </button>
+<button class="status-tab flex-1 min-w-[78px] py-1.5 px-3 rounded-lg font-label-md text-label-md text-center transition-colors text-on-surface-variant hover:text-on-surface" data-status="upcoming">
+      Upcoming (3)
+    </button>
+<button class="status-tab flex-1 min-w-[86px] py-1.5 px-3 rounded-lg font-label-md text-label-md text-center transition-colors text-on-surface-variant hover:text-on-surface" data-status="completed">
+      Completed (2)
+    </button>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 mb-space-md no-scrollbar">
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-highest text-on-surface shadow-sm" data-category="all">
+      All Categories
+    </button>
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-category="learning">
+      Learning
+    </button>
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-category="fitness">
+      Fitness
+    </button>
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-category="discipline">
+      Discipline
+    </button>
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-category="creativity">
+      Creativity
+    </button>
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-category="social">
+      Social
+    </button>
+<button class="cat-chip shrink-0 px-3 py-1.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-category="personal">
+      Personal
+    </button>
+</div>
+<!-- Focus Rhythm Meter (Delight Widget) -->
+<div class="mb-space-md p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="relative w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Daily Cadence</span>
+<span class="font-title-sm text-title-sm text-on-surface">3 of 5 Milestones Ready</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary/10 text-secondary">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span class="font-label-sm text-label-sm font-semibold">+445 XP pool</span>
+</div>
+</div>
+<!-- Interactive Quest List -->
+<div class="flex flex-col gap-space-sm" id="quest-list">
+<!-- Quest Card 1: Discipline / Hard -->
+<div class="quest-item group p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-sm" data-quest-cat="discipline" data-quest-status="pending">
+<div class="flex items-start gap-3">
+<button aria-label="Toggle quest completion" class="quest-toggle shrink-0 w-6 h-6 mt-0.5 rounded-lg bg-surface-container-high flex items-center justify-center transition-all duration-150 active:scale-90">
+<span class="material-symbols-outlined text-[16px] text-transparent check-icon">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface quest-title font-semibold">Morning Neural Protocol &amp; Cold Plunge</span>
+<span class="shrink-0 px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-primary/10 text-primary">+140 XP</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Discipline</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container/30 text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+              Hard
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 ml-auto">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+              06:30 AM
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quest Card 2: Creativity / Medium (In Progress) -->
+<div class="quest-item group p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-sm" data-quest-cat="creativity" data-quest-status="pending">
+<div class="flex items-start gap-3">
+<button aria-label="Toggle quest completion" class="quest-toggle shrink-0 w-6 h-6 mt-0.5 rounded-lg bg-surface-container-high flex items-center justify-center transition-all duration-150 active:scale-90">
+<span class="material-symbols-outlined text-[16px] text-transparent check-icon">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface quest-title font-semibold">Advanced Typography Exploration</span>
+<span class="shrink-0 px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-primary/10 text-primary">+95 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2.5">Kerning sets, variable axis scales, and mobile hierarchy tokens.</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Creativity</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-container/30 text-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Medium
+            </span>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-surface-tint">
+<span class="material-symbols-outlined text-[13px]">tune</span>
+<span class="font-label-sm text-label-sm font-medium">1/3 subtasks</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium ml-auto flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Active
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quest Card 3: Fitness / Hard -->
+<div class="quest-item group p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-sm" data-quest-cat="fitness" data-quest-status="pending">
+<div class="flex items-start gap-3">
+<button aria-label="Toggle quest completion" class="quest-toggle shrink-0 w-6 h-6 mt-0.5 rounded-lg bg-surface-container-high flex items-center justify-center transition-all duration-150 active:scale-90">
+<span class="material-symbols-outlined text-[16px] text-transparent check-icon">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface quest-title font-semibold">Strength Training: Deadlift &amp; Core</span>
+<span class="shrink-0 px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-primary/10 text-primary">+150 XP</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Fitness</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container/30 text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+              Hard
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 ml-auto">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+              55 mins
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quest Card 4: Learning / Easy -->
+<div class="quest-item group p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-sm" data-quest-cat="learning" data-quest-status="pending">
+<div class="flex items-start gap-3">
+<button aria-label="Toggle quest completion" class="quest-toggle shrink-0 w-6 h-6 mt-0.5 rounded-lg bg-surface-container-high flex items-center justify-center transition-all duration-150 active:scale-90">
+<span class="material-symbols-outlined text-[16px] text-transparent check-icon">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface quest-title font-semibold">Spanish Conversational Practice (30 min)</span>
+<span class="shrink-0 px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-primary/10 text-primary">+60 XP</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Learning</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary/20 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Easy
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 ml-auto">
+<span class="material-symbols-outlined text-[14px]">headphones</span>
+              Pimsleur 4
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quest Card 5: Personal / Medium (Completed state) -->
+<div class="quest-item group p-4 rounded-xl bg-surface-container-lowest/80 transition-all duration-200 shadow-sm opacity-80" data-quest-cat="personal" data-quest-status="completed">
+<div class="flex items-start gap-3">
+<button aria-label="Toggle quest completion" class="quest-toggle shrink-0 w-6 h-6 mt-0.5 rounded-lg bg-secondary text-on-secondary flex items-center justify-center transition-all duration-150 active:scale-90">
+<span class="material-symbols-outlined text-[16px] text-on-secondary check-icon">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface-variant line-through quest-title font-semibold">Weekly Review &amp; Habit Audit</span>
+<span class="shrink-0 px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-secondary/10 text-secondary">+100 XP</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">Personal</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">
+              Medium
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium ml-auto flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              Completed 10:14 AM
+            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Deliberate Visual Asset Card (Focus Environment) -->
+<div class="relative mt-space-lg rounded-2xl overflow-hidden p-5 bg-surface-container-low shadow-sm">
+<div class="relative z-10 flex flex-col gap-2 max-w-[280px]">
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary w-fit">
+<span class="material-symbols-outlined text-[14px]">neurology</span>
+<span class="font-label-sm text-label-sm font-semibold">Protocol Insight</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Flow State Preservation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Batch high-cognitive load quests before 13:00 to maximize neural recovery cycles.</p>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-36 pointer-events-none opacity-25 flex items-center justify-center">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 160 160">
+<circle cx="80" cy="80" r="70" stroke="currentColor" stroke-dasharray="4 6" stroke-width="1.5"></circle>
+<circle cx="80" cy="80" r="46" stroke="currentColor" stroke-width="1"></circle>
+<circle cx="80" cy="80" fill="currentColor" fill-opacity="0.15" r="22"></circle>
+</svg>
+</div>
+</div>
+<!-- Create Quest Bottom Sheet / Modal Overlay -->
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-black/60 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0" id="create-modal">
+<div class="w-full max-w-lg bg-surface-container rounded-t-3xl p-space-md shadow-2xl transition-transform duration-300 translate-y-full flex flex-col gap-space-md max-h-[751px] overflow-y-auto pb-safe" id="modal-panel">
+<!-- Drawer handle & Title -->
+<div class="flex flex-col gap-2">
+<div class="w-12 h-1 bg-surface-container-highest rounded-full mx-auto"></div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">New Quest</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Configure your active protocol</span>
+</div>
+<button aria-label="Close dialog" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Form Elements -->
+<div class="flex flex-col gap-space-sm">
+<!-- Field 1: Title -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Quest Title</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="new-quest-title" placeholder="e.g., 5km Tempo Run" type="text"/>
+</div>
+</div>
+<!-- Field 2: Category Dropdown -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Category</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 appearance-none rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary pr-9 shadow-inner" id="new-quest-cat">
+<option value="fitness">Fitness</option>
+<option value="discipline">Discipline</option>
+<option value="learning">Learning</option>
+<option value="creativity">Creativity</option>
+<option value="social">Social</option>
+<option value="personal">Personal</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Field 3: Difficulty Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Difficulty &amp; Yield</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="diff-btn py-2.5 px-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface flex flex-col items-center justify-center gap-0.5 transition-all text-center" data-diff="Easy" data-xp="50" type="button">
+<span class="font-title-sm text-title-sm font-semibold">Easy</span>
+<span class="font-label-sm text-[10px] text-secondary font-medium">+50 XP</span>
+</button>
+<button class="diff-btn py-2.5 px-2 rounded-xl bg-surface-container-high text-primary flex flex-col items-center justify-center gap-0.5 transition-all text-center ring-1 ring-primary/40" data-diff="Medium" data-xp="100" type="button">
+<span class="font-title-sm text-title-sm font-semibold">Medium</span>
+<span class="font-label-sm text-[10px] text-primary font-medium">+100 XP</span>
+</button>
+<button class="diff-btn py-2.5 px-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface flex flex-col items-center justify-center gap-0.5 transition-all text-center" data-diff="Hard" data-xp="150" type="button">
+<span class="font-title-sm text-title-sm font-semibold">Hard</span>
+<span class="font-label-sm text-[10px] text-error font-medium">+150 XP</span>
+</button>
+</div>
+</div>
+<!-- Field 4: Schedule -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Recurrence Schedule</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="sched-btn py-2 px-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-medium text-center ring-1 ring-outline-variant" type="button">
+              Daily
+            </button>
+<button class="sched-btn py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium text-center" type="button">
+              Mon/Wed/Fri
+            </button>
+<button class="sched-btn py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium text-center" type="button">
+              Once
+            </button>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex items-center gap-3 pt-2">
+<button class="flex-1 h-11 rounded-xl bg-surface-container-low text-on-surface font-title-sm text-title-sm font-medium hover:bg-surface-container-high transition-colors" id="cancel-modal-btn">
+          Cancel
+        </button>
+<button class="flex-1 h-11 rounded-xl bg-primary-container text-on-primary-container font-title-sm text-title-sm font-semibold hover:opacity-95 shadow-lg active:scale-98 transition-all flex items-center justify-center gap-1.5" id="save-quest-btn">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Save Quest</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // UI Interaction Logic
+  const openModalBtn = document.getElementById('open-create-btn');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  const cancelModalBtn = document.getElementById('cancel-modal-btn');
+  const createModal = document.getElementById('create-modal');
+  const modalPanel = document.getElementById('modal-panel');
+  const saveQuestBtn = document.getElementById('save-quest-btn');
+  const questList = document.getElementById('quest-list');
+
+  function openSheet() {
+    createModal.classList.remove('pointer-events-none', 'opacity-0');
+    createModal.classList.add('opacity-100');
+    modalPanel.classList.remove('translate-y-full');
+    modalPanel.classList.add('translate-y-0');
+  }
+
+  function closeSheet() {
+    modalPanel.classList.remove('translate-y-0');
+    modalPanel.classList.add('translate-y-full');
+    createModal.classList.remove('opacity-100');
+    createModal.classList.add('opacity-0');
+    setTimeout(() => {
+      createModal.classList.add('pointer-events-none');
+    }, 300);
+  }
+
+  openModalBtn.addEventListener('click', openSheet);
+  closeModalBtn.addEventListener('click', closeSheet);
+  cancelModalBtn.addEventListener('click', closeSheet);
+
+  createModal.addEventListener('click', (e) => {
+    if (e.target === createModal) closeSheet();
+  });
+
+  // Difficulty Toggle Selector
+  const diffBtns = document.querySelectorAll('.diff-btn');
+  diffBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      diffBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-high', 'text-primary', 'ring-1', 'ring-primary/40');
+        b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      btn.classList.add('bg-surface-container-high', 'text-primary', 'ring-1', 'ring-primary/40');
+    });
+  });
+
+  // Schedule Toggle Selector
+  const schedBtns = document.querySelectorAll('.sched-btn');
+  schedBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      schedBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-high', 'text-on-surface', 'ring-1', 'ring-outline-variant');
+        b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      btn.classList.add('bg-surface-container-high', 'text-on-surface', 'ring-1', 'ring-outline-variant');
+    });
+  });
+
+  // Save Quest Micro-Action
+  saveQuestBtn.addEventListener('click', () => {
+    const titleInput = document.getElementById('new-quest-title');
+    const catSelect = document.getElementById('new-quest-cat');
+    const title = titleInput.value.trim() || 'Daily Deep Work Session';
+    const cat = catSelect.value;
+    const catLabel = cat.charAt(0).toUpperCase() + cat.slice(1);
+
+    // Create Card
+    const newCard = document.createElement('div');
+    newCard.className = 'quest-item group p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300';
+    newCard.setAttribute('data-quest-cat', cat);
+    newCard.setAttribute('data-quest-status', 'pending');
+    newCard.innerHTML = `
+      <div class="flex items-start gap-3">
+        <button class="quest-toggle shrink-0 w-6 h-6 mt-0.5 rounded-lg bg-surface-container-high flex items-center justify-center transition-all duration-150 active:scale-90" aria-label="Toggle quest completion">
+          <span class="material-symbols-outlined text-[16px] text-transparent check-icon">check</span>
+        </button>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center justify-between gap-2 mb-1">
+            <span class="font-title-sm text-title-sm text-on-surface quest-title font-semibold">${title}</span>
+            <span class="shrink-0 px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-primary/10 text-primary">+100 XP</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 mt-2">
+            <span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">${catLabel}</span>
+            <span class="flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-container/30 text-tertiary-fixed">
+              <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Medium
+            </span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 ml-auto">
+              <span class="material-symbols-outlined text-[14px]">today</span>
+              Scheduled
+            </span>
+          </div>
+        </div>
+      </div>
+    `;
+
+    questList.prepend(newCard);
+    bindToggle(newCard.querySelector('.quest-toggle'));
+    titleInput.value = '';
+    closeSheet();
+  });
+
+  // Completion Toggle Handlers
+  function bindToggle(btn) {
+    btn.addEventListener('click', () => {
+      const parent = btn.closest('.quest-item');
+      const checkIcon = btn.querySelector('.check-icon');
+      const title = parent.querySelector('.quest-title');
+      const isCompleted = parent.getAttribute('data-quest-status') === 'completed';
+
+      if (isCompleted) {
+        parent.setAttribute('data-quest-status', 'pending');
+        parent.classList.remove('opacity-80', 'bg-surface-container-lowest/80');
+        parent.classList.add('bg-surface-container-low');
+        btn.classList.remove('bg-secondary', 'text-on-secondary');
+        btn.classList.add('bg-surface-container-high');
+        checkIcon.classList.remove('text-on-secondary');
+        checkIcon.classList.add('text-transparent');
+        title.classList.remove('line-through', 'text-on-surface-variant');
+        title.classList.add('text-on-surface');
+      } else {
+        parent.setAttribute('data-quest-status', 'completed');
+        parent.classList.add('opacity-80', 'bg-surface-container-lowest/80');
+        parent.classList.remove('bg-surface-container-low');
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+        btn.classList.remove('bg-surface-container-high');
+        checkIcon.classList.add('text-on-secondary');
+        checkIcon.classList.remove('text-transparent');
+        title.classList.add('line-through', 'text-on-surface-variant');
+        title.classList.remove('text-on-surface');
+      }
+    });
+  }
+
+  document.querySelectorAll('.quest-toggle').forEach(bindToggle);
+
+  // Status Tabs Filter Logic
+  const statusTabs = document.querySelectorAll('.status-tab');
+  statusTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      statusTabs.forEach(t => {
+        t.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm');
+      tab.classList.remove('text-on-surface-variant');
+
+      const filter = tab.getAttribute('data-status');
+      const items = document.querySelectorAll('.quest-item');
+      items.forEach(item => {
+        const itemStatus = item.getAttribute('data-quest-status');
+        if (filter === 'all' || filter === 'today') {
+          item.style.display = 'block';
+        } else if (filter === 'completed') {
+          item.style.display = itemStatus === 'completed' ? 'block' : 'none';
+        } else if (filter === 'upcoming') {
+          item.style.display = itemStatus === 'pending' ? 'block' : 'none';
+        }
+      });
+    });
+  });
+
+  // Category Filter Chips
+  const catChips = document.querySelectorAll('.cat-chip');
+  catChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      catChips.forEach(c => {
+        c.classList.remove('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+        c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+      chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+      const selectedCat = chip.getAttribute('data-category');
+      const items = document.querySelectorAll('.quest-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-quest-cat');
+        if (selectedCat === 'all' || itemCat === selectedCat) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-fixed bg-primary-container/20 shadow-[0_0_16px_rgba(167,139,250,0.18)]"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Overview</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl transition-all duration-200 text-primary-fixed bg-primary-container/20 shadow-[0_0_16px_rgba(167,139,250,0.18)]" data-path="quests" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Quests</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="challenges" href="#"><span class="material-symbols-outlined text-[20px]">swords</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Challenges</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="leaderboard" href="#"><span class="material-symbols-outlined text-[20px]">leaderboard</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Ranking</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-sm text-[10px] tracking-wide mt-0.5">Profile</span></a></div></nav></body></html>
